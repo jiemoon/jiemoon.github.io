@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title>Linux 服务器内存使用分析 · 文木逝水</title><meta name="description" content="运行在 Linux 上的应用程序大部分都是需要占用内存，那我们要如何查看当前内存的使用情况呢？"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/jiemoon" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Linux 服务器内存使用分析</h1><div class="post-time">Oct 14, 2015</div><div class="post-content"><p>运行在 Linux 上的应用程序大部分都是需要占用内存，像 web 服务器（nginx\apache）, Rails 程序 ，php-fpm 等等。如果服务器上可用的内存不够，就会出现部分程序会启动不起来，或者有些程序会被系统 kill 掉。</p>
+<p>我们可以通过以下命令，查询出哪些程序占用的内存比较多，如果有些是无用的进程，则手动把它 kill 掉。</p>
+<ul>
+<li>查看占用内存最多的程序（前10）</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps aux | sort -k4,4nr | head -n 10</span><br></pre></td></tr></table></figure>
+<ul>
+<li>可以查看占用总内存的比率</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -eo pmem,pcpu,vsize,pid,cmd | sort -k 1 -nr | head -15</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查看服务器内存的使用情况</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">free -m</span><br></pre></td></tr></table></figure>
+<p>或者，如果没有可以 kill 的进程，这时候就要考虑是不是要增加服务器的内存。</p>
+<p>另，系统内存和应用使用内存的区别：</p>
+<p><img src="/images/linux-system-app-mem.png" alt="系统内存和应用使用内存的区别"></p>
+<p><img src="/images/linux-cache-buffer.png" alt="Cache 和 Buffer"></p>
+</div></article></div></section><footer><div class="paginator"><a href="/2015/11/14/goaccess-analysis-nginx-access-log/" class="prev">PRVE</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://jiemoon.me">Jiemoon</a>, unless otherwise noted.</p></div></footer><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
