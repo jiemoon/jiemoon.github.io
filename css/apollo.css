@@ -703,6 +703,9 @@ pre {
     #toc .toc .toc-child {
       padding-left: 1em; }
 
+@media screen and (max-width: 700px) {
+  #toc {
+    display: none; } }
 .paginator {
   margin: 4em 0;
   text-align: center; }

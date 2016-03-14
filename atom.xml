@@ -50,9 +50,9 @@
     </summary>
     
     
-      <category term="elasticsearch" scheme="http://jiemoon.me/tags/elasticsearch/"/>
-    
       <category term="rails" scheme="http://jiemoon.me/tags/rails/"/>
+    
+      <category term="elasticsearch" scheme="http://jiemoon.me/tags/elasticsearch/"/>
     
   </entry>
   
