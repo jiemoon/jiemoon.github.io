@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jiemoon.me/"/>
-  <updated>2016-03-14T06:21:50.000Z</updated>
+  <updated>2016-03-23T06:32:27.000Z</updated>
   <id>http://jiemoon.me/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rails 笔记</title>
+    <link href="http://jiemoon.me/2016/03/13/rails-note/"/>
+    <id>http://jiemoon.me/2016/03/13/rails-note/</id>
+    <published>2016-03-13T06:00:43.000Z</published>
+    <updated>2016-03-23T06:32:27.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;获取过时-Gem-的信息&quot;&gt;&lt;a href=&quot;#获取过时-Gem-的信息&quot; class=&quot;headerlink&quot; title=&quot;获取过时 Gem 的信息&quot;&gt;&lt;/a&gt;获取过时 Gem 的信息&lt;/h2&gt;&lt;p&gt;使用如下命令可以获取项目中使用的 &lt;code&gt;gem&lt;/code&gt; 的最新版本信息&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bundle outdated&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;a href=&quot;http://bundler.io/v1.1/bundle_outdated.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;bundle outdated doc&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 运行结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ bundle outdated&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Updating git://github.com/rails/activerecord-session_store.git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Fetching gem metadata from https://gems.ruby-china.org/.........&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Fetching version metadata from https://gems.ruby-china.org/...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Fetching dependency metadata from https://gems.ruby-china.org/..&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Resolving dependencies......................................................................&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Outdated gems included &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; the bundle:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * actionpack (newest 4.2.6, installed 4.2.3) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * active_model_serializers (newest 0.9.4, installed 0.9.3) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * activerecord-session_store (newest 0.1.2 2bd2e6c, installed 0.1.1 2d9517d) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * browser (newest 2.0.2, installed 1.1.0, requested ~&amp;gt; 1.1) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * byebug (newest 8.2.2, installed 5.0.0) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; groups &lt;span class=&quot;string&quot;&gt;&quot;development, test&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * coffee-rails (newest 4.1.1, installed 4.1.0, requested ~&amp;gt; 4.1.0) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * doorkeeper (newest 3.1.0, installed 2.2.1) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * factory_girl_rails (newest 4.6.0, installed 4.5.0, requested ~&amp;gt; 4.5) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; groups &lt;span class=&quot;string&quot;&gt;&quot;development, test&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * grape (newest 0.15.0, installed 0.14.0, requested = 0.14.0) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  * jbuilder (newest 2.4.1, installed 2.3.0, requested ~&amp;gt; 2.0) &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; group &lt;span class=&quot;string&quot;&gt;&quot;default&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  ...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;更新-Gem&quot;&gt;&lt;a href=&quot;#更新-Gem&quot; class=&quot;headerlink&quot; title=&quot;更新 Gem&quot;&gt;&lt;/a&gt;更新 Gem&lt;/h2&gt;&lt;p&gt;之后可以用 &lt;code&gt;gem update&lt;/code&gt; 来更新相应的 gem 版本&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;gem update gem_name&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;获取过时-Gem-的信息&quot;&gt;&lt;a href=&quot;#获取过时-Gem-的信息&quot; class=&quot;headerlink&quot; title=&quot;获取过时 Gem 的信息&quot;&gt;&lt;/a&gt;获取过时 Gem 的信息&lt;/h2&gt;&lt;p&gt;使用如下命令可以获取项目中使用的 &lt;code&gt;gem&lt;/co
+    
+    </summary>
+    
+    
+      <category term="Rails" scheme="http://jiemoon.me/tags/Rails/"/>
+    
+  </entry>
   
   <entry>
     <title>Rails 中使用 ElasticSearch</title>
@@ -50,9 +75,9 @@
     </summary>
     
     
-      <category term="rails" scheme="http://jiemoon.me/tags/rails/"/>
-    
       <category term="elasticsearch" scheme="http://jiemoon.me/tags/elasticsearch/"/>
+    
+      <category term="rails" scheme="http://jiemoon.me/tags/rails/"/>
     
   </entry>
   
@@ -142,7 +167,7 @@
     <link href="http://jiemoon.me/2015/12/31/how-to-update-git-project-from-fork/"/>
     <id>http://jiemoon.me/2015/12/31/how-to-update-git-project-from-fork/</id>
     <published>2015-12-31T06:49:13.000Z</published>
-    <updated>2016-03-14T06:18:05.000Z</updated>
+    <updated>2016-03-24T02:56:33.000Z</updated>
     
     <content type="html">&lt;p&gt;当我们把别人的项目 &lt;code&gt;fork&lt;/code&gt; 过来后，当源更新后，我们要怎样才能更新自己 fork 过来的项目呢？是要重新 &lt;code&gt;fork&lt;/code&gt;，这当然可以，但有更好的方法：&lt;/p&gt;
 &lt;ol&gt;
@@ -151,7 +176,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;将本地的修改提交 commit&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;在每次 Pull Request 前做如下操作，即可实现和上游版本库的同步&lt;br&gt;3.1 ： &lt;code&gt;git remote update upstream&lt;/code&gt;&lt;br&gt;3.2 ： &lt;code&gt;git rebase upstream/{branch name}&lt;/code&gt;&lt;br&gt;需要注意的是在操作 3.2 之前，一定要将 &lt;code&gt;checkout&lt;/code&gt; 到 &lt;code&gt;{branch name}&lt;/code&gt; 所指定的 &lt;code&gt;branch&lt;/code&gt;&lt;br&gt;如: &lt;code&gt;git checkout develop&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;在每次 Pull Request 前做如下操作，即可实现和上游版本库的同步&lt;br&gt;3.1 ： &lt;code&gt;git remote update {upstream}&lt;/code&gt;&lt;br&gt;3.2 ： &lt;code&gt;git rebase {upstream}/{branch name}&lt;/code&gt;&lt;br&gt;需要注意的是在操作 3.2 之前，一定要将 &lt;code&gt;checkout&lt;/code&gt; 到 &lt;code&gt;{branch name}&lt;/code&gt; 所指定的 &lt;code&gt;branch&lt;/code&gt;&lt;br&gt;如: &lt;code&gt;git checkout develop&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Push 代码到 Github&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git push origin develop&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -215,7 +240,7 @@
     <link href="http://jiemoon.me/2015/10/14/linux-server-memory-usage-analysis/"/>
     <id>http://jiemoon.me/2015/10/14/linux-server-memory-usage-analysis/</id>
     <published>2015-10-14T05:15:00.000Z</published>
-    <updated>2016-03-14T06:13:03.000Z</updated>
+    <updated>2016-03-14T10:01:56.000Z</updated>
     
     <content type="html">&lt;p&gt;运行在 Linux 上的应用程序大部分都是需要占用内存，像 web 服务器（nginx\apache）, Rails 程序 ，php-fpm 等等。如果服务器上可用的内存不够，就会出现部分程序会启动不起来，或者有些程序会被系统 kill 掉。&lt;/p&gt;
 &lt;p&gt;我们可以通过以下命令，查询出哪些程序占用的内存比较多，如果有些是无用的进程，则手动把它 kill 掉。&lt;/p&gt;
